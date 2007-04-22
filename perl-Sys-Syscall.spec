@@ -1,7 +1,7 @@
 %define realname   Sys-Syscall
 
 Name:		perl-%{realname}
-Version:    0.21
+Version:    0.22
 Release:    %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
