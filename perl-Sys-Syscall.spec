@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:    0.22
-Release:    %mkrel 2
+Release:    %mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:    Perl module to access system calls that Perl doesn't normally provide access to
