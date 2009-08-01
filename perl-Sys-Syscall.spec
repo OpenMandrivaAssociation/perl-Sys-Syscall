@@ -1,22 +1,24 @@
-%define realname   Sys-Syscall
+%define upstream_name    Sys-Syscall
+%define upstream_version 0.22
 
-Name:		perl-%{realname}
-Version:    0.22
-Release:    %mkrel 3
-License:	GPL or Artistic
-Group:		Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Perl module to access system calls that Perl doesn't normally provide access to
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sys/Sys-Syscall-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sys/Sys-Syscall-%{upstream_version}.tar.bz2
+
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Use epoll, sendfile, from Perl.
 
 %prep
-%setup -q -n Sys-Syscall-%{version} 
+%setup -q -n Sys-Syscall-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -37,4 +39,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
-
