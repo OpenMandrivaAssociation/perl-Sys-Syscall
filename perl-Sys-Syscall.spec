@@ -1,5 +1,5 @@
 %define upstream_name    Sys-Syscall
-%define upstream_version 0.22
+%define upstream_version 0.23
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    Perl module to access system calls that Perl doesn't normally provid
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sys/Sys-Syscall-%{upstream_version}.tar.bz2
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sys/Sys-Syscall-%{upstream_version}.tar.gz
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
@@ -25,7 +25,7 @@ Use epoll, sendfile, from Perl.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
