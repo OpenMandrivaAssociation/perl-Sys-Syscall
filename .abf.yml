@@ -1,2 +1,4 @@
+removed_sources:
+  Sys-Syscall-0.23.tar.gz: 894a3bddbaf5ba7040eab41bbb0b6cc8e50f7203
 sources:
-  "Sys-Syscall-0.23.tar.gz": 894a3bddbaf5ba7040eab41bbb0b6cc8e50f7203
+  Sys-Syscall-0.25.tar.gz: 2f3318e660acc1ddf49b18604dd13381605c7a3e
