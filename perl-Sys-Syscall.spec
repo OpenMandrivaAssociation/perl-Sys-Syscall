@@ -1,15 +1,15 @@
 %define upstream_name    Sys-Syscall
-%define upstream_version 0.23
+%define upstream_version 0.25
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.25
+Release:	1
 
 Summary:	Perl module to access system calls that Perl doesn't normally provide access to
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sys/Sys-Syscall-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Sys/Sys-Syscall-0.25.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -69,4 +69,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Apr 19 2006 Michael Scherer <misc@mandriva.org> 0.20-1mdk
 - First Mandriva package
+
 
