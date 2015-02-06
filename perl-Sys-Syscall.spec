@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.25
-Release:	2
+Release:	3
 
 Summary:	Perl module to access system calls that Perl doesn't normally provide access to
 License:	GPL+ or Artistic
