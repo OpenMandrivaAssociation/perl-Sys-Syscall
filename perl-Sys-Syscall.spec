@@ -8,7 +8,7 @@ Release:	3
 Summary:	Perl module to access system calls that Perl doesn't normally provide access to
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Sys/Sys-Syscall-0.25.tar.gz
 
 BuildRequires:	perl-devel
